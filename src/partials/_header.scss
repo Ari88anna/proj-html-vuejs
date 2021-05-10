@@ -109,5 +109,34 @@
                 margin: 0 10px;
             }
         }
+    }    
+}
+
+.header-bottom-nav {
+    background-color: $secondary_color;
+    color: white;
+
+    .bottom-menu-container {
+        width: 60%;
+        margin: auto;
+        .bottom-nav-menu {
+            @include flex;
+            justify-content: space-around;
+
+            li {
+                @include flex;
+                align-items: center;
+                padding: $standard_padding;
+
+                a {
+                    color:white;
+                    font-size: $small_text;
+                    padding-left: 10px;
+                }
+            };
+        }
+    
+            
     }
+    
 }

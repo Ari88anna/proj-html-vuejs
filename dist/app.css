@@ -138,3 +138,26 @@ ul {
 .header-middle-nav .container .sign-up button {
   margin: 0 10px;
 }
+
+.header-bottom-nav {
+  background-color: #273044;
+  color: white;
+}
+.header-bottom-nav .bottom-menu-container {
+  width: 60%;
+  margin: auto;
+}
+.header-bottom-nav .bottom-menu-container .bottom-nav-menu {
+  display: flex;
+  justify-content: space-around;
+}
+.header-bottom-nav .bottom-menu-container .bottom-nav-menu li {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+.header-bottom-nav .bottom-menu-container .bottom-nav-menu li a {
+  color: white;
+  font-size: 10px;
+  padding-left: 10px;
+}
