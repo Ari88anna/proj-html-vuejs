@@ -9,6 +9,17 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex; 
-    // align-items: center;
+    align-items: center;
     justify-content: space-between;
+}
+
+@mixin input_append {
+    background-color: #457992;
+    color: white;
+    height: $input_append_height;    
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    line-height: 30px;
 }

@@ -9,8 +9,12 @@ body {
     font-family: $primary_font_family;
 }
 
+img {
+    width: 100%;
+}
+
 .container {
-    width: 1024px;
+    width: 90%;
     margin: auto;    
 }
 
@@ -20,4 +24,15 @@ a {
 
 ul {
     list-style-type: none;
+}
+
+.btn {
+    background-color: $primary_color;
+    border: 0;
+    padding: 20px 30px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: $small_text;
 }

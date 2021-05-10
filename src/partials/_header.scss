@@ -46,3 +46,68 @@
     }
 
 }
+
+.header-middle-nav {
+    border-top: 1px solid $secondary_text_color;
+    padding: $standard_padding;    
+
+    .container {
+        @include flex_jsb_center;        
+        color: $secondary_text_color;
+
+        .master-logo {
+            width: 200px;  
+            img {
+                vertical-align: middle;
+            }          
+        }
+
+        .search-courses-input {
+            position: relative;
+            font-size: $small_text;
+            label {
+                text-transform: uppercase;
+                padding-right: 10px;
+                i {
+                    font-size: 7px;
+                    color: $secondary_text_color;
+                    padding-right: 5px;
+                }                
+            }
+
+            input {
+                border: 0;
+                background-color: #f0f2f5;
+                height: $input_append_height;
+                width: 450px;                
+            }
+
+            .search-symbol {
+                @include input_append;
+                width: 35px;
+                
+            }
+        }
+
+        .affiliates {
+            @include flex;
+            div {
+                font-size: $small_text;
+                padding-left: 10px;
+            }
+        }
+
+        .sign-up {
+            @include flex;
+            align-items: center;
+
+            .user {
+                font-size: $small_text;
+            }
+
+            button {
+                margin: 0 10px;
+            }
+        }
+    }
+}
