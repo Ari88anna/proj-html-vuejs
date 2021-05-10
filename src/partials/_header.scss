@@ -1,3 +1,48 @@
-.top-nav {
-    font-family: $secondary_font_family;
+.header-top-nav {    
+    @include flex_jsb_center;
+    padding: 10px 0;
+    font-size: $small_text;
+    color: $secondary_text_color;  
+    font-family: $secondary_font_family; 
+     
+
+    .site-language {
+        @include flex; 
+        div {
+            i {
+                padding-left: 5px;
+            }
+        }
+    }
+
+    .top-nav-menu {
+        @include flex;        
+            
+        .menu-list{             
+            @include flex;
+
+            li {
+                padding-left: $standard_padding_left;
+                
+                a{
+                    color: $secondary_text_color;
+                }
+            }
+        }      
+
+        .social-media-list {
+            @include flex;
+            padding-left: $standard_padding_left;
+            
+            li {
+                padding-left: 10px;
+
+                a{
+                    color: #aaaaaa;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
 }
