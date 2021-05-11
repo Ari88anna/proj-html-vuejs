@@ -105,3 +105,121 @@
         }
     }
 }
+
+// Subscribe section
+
+.subscribe-section {
+    background-color: $brand_primary_color;
+    color: white;
+    padding: $standard_padding;
+
+    .small-container {
+        @include flex;
+
+        .subscribe-text {
+            width: 60%;
+
+            h4 {
+                font-weight: 100;
+                padding-bottom: $padding_bottom_sub_section;
+            }
+            p {
+                font-size: $small_text;
+            }
+
+        }
+
+        .subscribe-enter-email {
+            width: 40%;            
+
+            .label-container {
+                padding-bottom: $padding_bottom_sub_section;
+
+                label {
+                    text-transform: uppercase;
+                    font-size: $small_text;                    
+                }
+            }
+
+            .input-container {
+                position: relative;
+                input {
+                    width: 100%;
+                    height: 30px;
+                    border: 0;
+
+                    
+                    
+                } 
+                
+                .subscribe-btn {
+                    @include input_append;
+                    font-size: $small_text;
+                    text-transform: uppercase;
+                    padding: 0 15px;
+                }
+            }
+
+            
+
+        }
+    }
+}
+
+// Popular courses section
+
+.popular-courses-section {
+    background-color: #f0f4fa;
+    padding: $standard_padding;
+
+    .centred {
+        h2 {
+            @include primary_section_title;
+        }
+        p {
+            font-size: 14px;
+            color: $secondary_color;
+        }
+    }
+
+    .slider-arrow {
+        @include flex_jc;      
+    }
+}
+
+// Join us section
+
+.join-us-section {
+    .container {
+        @include flex;
+
+        .join-us-box {
+            @include flex_align_center;
+            width: 50%;
+            border: 1px solid #dde6eb;
+            padding: 50px 30px;
+
+            .box-img {
+                width: 30%;
+                padding: 10px;
+            }
+
+            .box-text {
+                width: 70%;
+                padding: 25px;
+
+                h2 {
+                    color: $secondary_color;
+                }
+                p {
+                    margin: 25px 0 40px 0;
+                    font-size: $main_text;
+                }
+            }
+
+            &.access {
+                margin-left: 15px;
+            }
+        }
+    }
+}

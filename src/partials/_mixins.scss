@@ -57,3 +57,8 @@
     font-size: 35px;
     color: $secondary_color;
 }
+
+@mixin placeholder {
+    font-size: $small_text;
+    padding-left: 10px;
+}

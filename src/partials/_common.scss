@@ -109,3 +109,27 @@ ul {
         
     }
 }
+
+::placeholder {
+    @include placeholder;
+}
+
+::-webkit-input-placeholder {
+    @include placeholder;
+}
+
+::-ms-input-placeholder {
+    @include placeholder;
+}
+
+.arrow-bg {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 0;
+    margin-left: 5px;
+    line-height: 30px;
+    text-align: center;
+    color: #dde6eb;
+    cursor: pointer;
+}
