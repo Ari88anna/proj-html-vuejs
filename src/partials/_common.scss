@@ -18,6 +18,30 @@ img {
     margin: auto;    
 }
 
+.small-container {
+    width: 60%;
+    margin: auto;
+}
+
+.centred-menu {
+    @include flex_jc;   
+
+    li {
+        @include flex_align_center;                
+        padding: 20px 20px;
+
+        a {
+            color:$secondary_text_color;
+            font-size: $main_text;
+            padding-left: 10px;
+        }
+    };
+}
+
+section {
+    margin-bottom: $section_margin_bottom;
+}
+
 a {
     text-decoration: none;
 }
@@ -26,13 +50,62 @@ ul {
     list-style-type: none;
 }
 
+.centred {
+    text-align: center;
+}
+
 .btn {
-    background-color: $primary_color;
+    background-color: $brand_primary_color;
     border: 0;
-    padding: 20px 30px;
+    padding: 15px 25px;
     border-radius: 30px;
     color: white;
     cursor: pointer;
     text-transform: uppercase;
-    font-size: $small_text;
+    font-weight: 700;
+    font-size: $small_text;   
+}
+
+.courses-offer {
+    @include flex_jsb;
+    padding: $standard_padding;
+    
+    li {
+        width: calc(100% / 6 - 15px);
+        background-color:  white;
+        border: 1px solid $secondary_text_color;
+
+        .course-description {
+            padding: 0 10px;
+
+            a {
+                font-size: $small_text;
+                color: $secondary_text_color;
+            }
+
+            h6 {
+                margin: 5px 0;
+            }
+
+            .course-info {
+                @include flex_jsb_center;
+                border-top: 1px solid $secondary_text_color;
+                text-align: right;
+                margin: 15px 0;
+
+                .cost {
+                    div {
+                        font-size: $small_text;
+                        
+                        &.discount {
+                            color: $secondary_text_color;
+                            text-decoration: line-through 2px;                           
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    }
 }

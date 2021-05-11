@@ -113,29 +113,5 @@
 
 .header-bottom-nav {
     background-color: $secondary_color;
-    color: white;
-
-    .bottom-menu-container {
-        width: 60%;
-        margin: auto;
-
-        .bottom-nav-menu {
-            @include flex;
-            justify-content: space-around;
-
-            li {
-                @include flex_align_center;                
-                padding: $standard_padding;
-
-                a {
-                    color:$secondary_text_color;
-                    font-size: $small_text;
-                    padding-left: 10px;
-                }
-            };
-        }
-    
-            
-    }
-    
+    color: white;      
 }

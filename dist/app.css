@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 img {
@@ -17,6 +17,30 @@ img {
   margin: auto;
 }
 
+.small-container {
+  width: 60%;
+  margin: auto;
+}
+
+.centred-menu {
+  display: flex;
+  justify-content: center;
+}
+.centred-menu li {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+}
+.centred-menu li a {
+  color: #c6b9af;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
 a {
   text-decoration: none;
 }
@@ -25,15 +49,57 @@ ul {
   list-style-type: none;
 }
 
+.centred {
+  text-align: center;
+}
+
 .btn {
   background-color: #ff4550;
   border: 0;
-  padding: 20px 30px;
+  padding: 15px 25px;
   border-radius: 30px;
   color: white;
   cursor: pointer;
   text-transform: uppercase;
+  font-weight: 700;
   font-size: 10px;
+}
+
+.courses-offer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.courses-offer li {
+  width: calc(100% / 6 - 15px);
+  background-color: white;
+  border: 1px solid #c6b9af;
+}
+.courses-offer li .course-description {
+  padding: 0 10px;
+}
+.courses-offer li .course-description a {
+  font-size: 10px;
+  color: #c6b9af;
+}
+.courses-offer li .course-description h6 {
+  margin: 5px 0;
+}
+.courses-offer li .course-description .course-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #c6b9af;
+  text-align: right;
+  margin: 15px 0;
+}
+.courses-offer li .course-description .course-info .cost div {
+  font-size: 10px;
+}
+.courses-offer li .course-description .course-info .cost div.discount {
+  color: #c6b9af;
+  -webkit-text-decoration: line-through 2px;
+          text-decoration: line-through 2px;
 }
 
 .header-top-nav {
@@ -143,33 +209,16 @@ ul {
   background-color: #273044;
   color: white;
 }
-.header-bottom-nav .bottom-menu-container {
-  width: 60%;
-  margin: auto;
-}
-.header-bottom-nav .bottom-menu-container .bottom-nav-menu {
-  display: flex;
-  justify-content: space-around;
-}
-.header-bottom-nav .bottom-menu-container .bottom-nav-menu li {
-  display: flex;
-  align-items: center;
-  padding: 20px 0;
-}
-.header-bottom-nav .bottom-menu-container .bottom-nav-menu li a {
-  color: #c6b9af;
-  font-size: 10px;
-  padding-left: 10px;
-}
 
 .jumbotron-section {
   position: relative;
   height: 275px;
-  padding: 20px 0;
+  margin: 20px 0;
 }
 .jumbotron-section .jumbo-title {
   position: absolute;
   left: 0;
+  top: 0;
   width: 65%;
   height: 100%;
   z-index: 1;
@@ -192,9 +241,55 @@ ul {
 .jumbotron-section .jumbo-img {
   position: absolute;
   right: 0;
+  top: 0;
   width: 50%;
   height: 100%;
 }
 .jumbotron-section .jumbo-img img {
   height: 100%;
+}
+
+.banner {
+  background-image: url("../img/bg.png");
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+.banner .text-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28%;
+}
+.banner .text-content h2 {
+  font-size: 35px;
+  color: #273044;
+}
+.banner .text-content p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #273044;
+  margin: 25px 0 40px 0;
+}
+
+.recent-courses-section .recent-courses h2 {
+  font-size: 35px;
+  color: #273044;
+}
+.recent-courses-section .recent-courses .centred-menu li {
+  padding: 30px 10px;
+}
+.recent-courses-section .recent-courses .centred-menu li a {
+  color: #5c899f;
+}
+.recent-courses-section .recent-courses .centred-menu li a.active {
+  background-color: #f0f4fa;
+  padding: 5px;
+  border-radius: 15px;
+}
+.recent-courses-section .courses-offer {
+  flex-wrap: wrap;
+}
+.recent-courses-section .courses-offer li {
+  margin-bottom: 30px;
 }

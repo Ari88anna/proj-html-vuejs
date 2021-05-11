@@ -1,19 +1,21 @@
+// Jumbotron
 .jumbotron-section {
     position: relative;
     height: 275px;
-    padding: $standard_padding;
+    margin: 20px 0;
 
     .jumbo-title {
         position: absolute;
         left: 0;
+        top: 0;
         width: 65%;
         height: 100%;        
         z-index: 1;
-        background: linear-gradient(245deg, rgba(0,0,0,0) 20%, $primary_color 20%);
+        background: linear-gradient(245deg, rgba(0,0,0,0) 20%, $brand_primary_color 20%);       
 
         div {
             width: 50%;
-            margin: auto;
+            margin: auto;            
             position: relative;
             top: 50%;
             transform: translateY(-50%);
@@ -30,7 +32,8 @@
 
     .jumbo-img {
         position: absolute;
-        right:0;        
+        right:0; 
+        top: 0;       
         width: 50%;
         height: 100%;
 
@@ -40,3 +43,65 @@
     }
 }
 
+// Banner
+.banner {
+    background-image: url("../img/bg.png");
+    background-size: cover;
+    height: 400px;
+    position: relative;
+
+    .text-content {
+        @include translateY;
+        width: 28%;
+
+        h2{
+            @include primary_section_title
+        }
+
+        p {
+            font-size: $main_text;
+            font-weight: bold;
+            color: $secondary_color;
+            margin: 25px 0 40px 0;  
+        }
+    }
+}
+
+// Recent courses
+.recent-courses-section {
+
+    .recent-courses {    
+
+        h2{
+            @include primary_section_title;
+        }
+    
+        .centred-menu {
+            
+
+            li {
+                padding: 30px 10px;              
+        
+                a {
+                    color: #5c899f;
+
+                    &.active {
+                        background-color: #f0f4fa;
+                        padding: 5px;
+                        border-radius: 15px;
+                    }
+                }
+            }
+
+           
+        }
+    }
+
+    .courses-offer {
+        flex-wrap: wrap;
+
+        li {
+            margin-bottom: 30px;
+        }
+    }
+}
