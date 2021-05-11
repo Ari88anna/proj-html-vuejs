@@ -70,13 +70,13 @@ ul {
 .header-top-nav .top-nav-menu .social-media-list li {
   padding-left: 10px;
 }
-.header-top-nav .top-nav-menu .social-media-list li a {
+.header-top-nav .top-nav-menu .social-media-list li i {
   color: #aaaaaa;
   font-size: 12px;
 }
 
 .header-middle-nav {
-  border-top: 1px solid #c6b9af;
+  border-top: 1px solid #f0f2f5;
   padding: 20px 0;
 }
 .header-middle-nav .container {
@@ -157,7 +157,44 @@ ul {
   padding: 20px 0;
 }
 .header-bottom-nav .bottom-menu-container .bottom-nav-menu li a {
-  color: white;
+  color: #c6b9af;
   font-size: 10px;
   padding-left: 10px;
+}
+
+.jumbotron-section {
+  position: relative;
+  height: 275px;
+  padding: 20px 0;
+}
+.jumbotron-section .jumbo-title {
+  position: absolute;
+  left: 0;
+  width: 65%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(245deg, rgba(0, 0, 0, 0) 20%, #ff4550 20%);
+}
+.jumbotron-section .jumbo-title div {
+  width: 50%;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.jumbotron-section .jumbo-title div h1 {
+  color: white;
+  font-size: 35px;
+}
+.jumbotron-section .jumbo-title div p {
+  color: white;
+}
+.jumbotron-section .jumbo-img {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+.jumbotron-section .jumbo-img img {
+  height: 100%;
 }

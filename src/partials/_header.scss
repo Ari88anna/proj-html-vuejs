@@ -37,7 +37,7 @@
             li {
                 padding-left: 10px;
 
-                a{
+                i{
                     color: #aaaaaa;
                     font-size: 12px;
                 }
@@ -48,7 +48,7 @@
 }
 
 .header-middle-nav {
-    border-top: 1px solid $secondary_text_color;
+    border-top: 1px solid #f0f2f5;
     padding: $standard_padding;    
 
     .container {
@@ -84,8 +84,7 @@
 
             .search-symbol {
                 @include input_append;
-                width: 35px;
-                
+                width: 35px;               
             }
         }
 
@@ -119,17 +118,17 @@
     .bottom-menu-container {
         width: 60%;
         margin: auto;
+
         .bottom-nav-menu {
             @include flex;
             justify-content: space-around;
 
             li {
-                @include flex;
-                align-items: center;
+                @include flex_align_center;                
                 padding: $standard_padding;
 
                 a {
-                    color:white;
+                    color:$secondary_text_color;
                     font-size: $small_text;
                     padding-left: 10px;
                 }

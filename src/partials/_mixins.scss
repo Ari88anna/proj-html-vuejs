@@ -13,6 +13,16 @@
     justify-content: space-between;
 }
 
+@mixin flex_align_center {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; 
+    align-items: center;
+    
+}
+
+
+
 @mixin input_append {
     background-color: #457992;
     color: white;

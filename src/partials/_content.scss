@@ -1,0 +1,42 @@
+.jumbotron-section {
+    position: relative;
+    height: 275px;
+    padding: $standard_padding;
+
+    .jumbo-title {
+        position: absolute;
+        left: 0;
+        width: 65%;
+        height: 100%;        
+        z-index: 1;
+        background: linear-gradient(245deg, rgba(0,0,0,0) 20%, $primary_color 20%);
+
+        div {
+            width: 50%;
+            margin: auto;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+
+            h1 {
+                color: white;
+                font-size: 35px;
+            }
+            p {
+                color: white;
+            }
+        }
+    }
+
+    .jumbo-img {
+        position: absolute;
+        right:0;        
+        width: 50%;
+        height: 100%;
+
+        img {
+            height: 100%;
+        }
+    }
+}
+
