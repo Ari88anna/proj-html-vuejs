@@ -23,21 +23,6 @@ img {
     margin: auto;
 }
 
-.centred-menu {
-    @include flex_jc;   
-
-    li {
-        @include flex_align_center;                
-        padding: 20px 20px;
-
-        a {
-            color:$secondary_text_color;
-            font-size: $main_text;
-            padding-left: 10px;
-        }
-    };
-}
-
 section {
     margin-bottom: $section_margin_bottom;
 }
@@ -54,12 +39,29 @@ ul {
     text-align: center;
 }
 
+.centred-menu {
+    @include flex_jc;   
+
+    li {
+        @include flex_align_center;                
+        padding: 20px 20px;
+
+        a {
+            color:$secondary_text_color;
+            font-size: $main_text;
+            padding-left: 10px;
+        }
+    };
+}
+
+
+
 .btn {
     background-color: $brand_primary_color;
     border: 0;
     padding: 15px 25px;
     border-radius: 30px;
-    color: white;
+    color: $text_colored_bg;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 700;
@@ -72,8 +74,8 @@ ul {
     
     li {
         width: calc(100% / 6 - 15px);
-        background-color:  white;
-        border: 1px solid $secondary_text_color;
+        background-color:  $text_colored_bg;
+        border: 1px solid $border_color;
 
         .course-description {
             padding: 0 10px;
@@ -89,7 +91,7 @@ ul {
 
             .course-info {
                 @include flex_jsb_center;
-                border-top: 1px solid $secondary_text_color;
+                border-top: 1px solid $border_color;
                 text-align: right;
                 margin: 15px 0;
 
@@ -125,11 +127,30 @@ ul {
 .arrow-bg {
     width: 30px;
     height: 30px;
-    background-color: white;
-    border: 0;
-    margin-left: 5px;
+    background-color: $text_colored_bg;
+    border: 1px solid #e0e0e0;    
     line-height: 30px;
     text-align: center;
-    color: #dde6eb;
+    color: #e0e0e0;
     cursor: pointer;
+
+        &:hover {
+            background-color: $i_menu_text;
+            color: $text_colored_bg;
+        }
+}
+
+.fixed-element {
+    @include flex_col_sa_center;
+    position: fixed;
+    bottom: 50%;
+    right:0;
+    width: 50px;
+    height: 190px;
+    background-color: $text_colored_bg;
+    box-shadow: -3px 2px 5px $border_color;
+
+        a {
+            color:#e0e0e0;
+        }
 }

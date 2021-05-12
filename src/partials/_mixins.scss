@@ -34,11 +34,20 @@
     align-items: center;    
 }
 
+@mixin flex_col_sa_center {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+    align-items: center;
+}
+
 
 
 @mixin input_append {
     background-color: #457992;
-    color: white;
+    color: $text_colored_bg;
     height: $input_append_height;    
     position: absolute;
     right: 0;
@@ -55,7 +64,7 @@
 
 @mixin primary_section_title {
     font-size: 35px;
-    color: $secondary_color;
+    color: $brand_text_color;
 }
 
 @mixin placeholder {
