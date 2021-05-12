@@ -87,6 +87,8 @@ ul {
 
             h6 {
                 margin: 5px 0;
+                color: $main_text_color;
+                font-weight: 100;
             }
 
             .course-info {
@@ -94,6 +96,10 @@ ul {
                 border-top: 1px solid $border_color;
                 text-align: right;
                 margin: 15px 0;
+
+                .stars {
+                    @include flex;
+                }
 
                 .cost {
                     div {
@@ -151,6 +157,6 @@ ul {
     box-shadow: -3px 2px 5px $border_color;
 
         a {
-            color:#e0e0e0;
+            color:$main_text_color;
         }
 }

@@ -50,23 +50,19 @@
 
                         <!-- Menu list -->
                         <ul class="menu-list">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Pages</a></li>
-                            <li><a href="">Course Formats</a></li>
-                            <li><a href="">Courses</a></li>
-                            <li><a href="">Demos</a></li>
+                            <li v-for="element in topMenu">
+                                <a href="">{{element}}</a>
+                            </li>                            
                         </ul>                        
                         <!-- end Menu list -->
                         
                         <!-- Social Media List -->
                         <ul class="social-media-list">
 
-                            <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                            <li><a href=""><i class="fab fa-google-plus"></i></a></li>
-                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                            <li v-for="social in socialList">
+                                <a href=""><i :class="'fab fa' + social.name"></i></a>
+                            </li>
+                            
 
                         </ul>
                         <!-- end Social Media List -->
@@ -204,7 +200,13 @@
 
                                 <div class="course-info">
 
-                                    <div class="stars"><img src="img/starfull.svg" alt="stars"></div>
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
                                     <div class="cost">
                                         <div class="discount">$ 199.99</div>
                                         <div>$ 100</div>

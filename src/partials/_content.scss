@@ -61,7 +61,7 @@
         p {
             font-size: $main_text;
             font-weight: bold;
-            color: $brand_text_color;
+            color: $main_text_color;
             margin: 25px 0 40px 0;  
         }
     }
@@ -175,7 +175,7 @@
         }
         p {
             font-size: 14px;
-            color: $brand_text_color;
+            color: $main_text_color;
         }
     }
 
@@ -193,7 +193,7 @@
         .join-us-box {
             @include flex_align_center;
             width: 50%;
-            border: 1px solid #dde6eb;
+            border: 1px solid $border_color;
             padding: 50px 30px;
 
             .box-img {
@@ -211,6 +211,7 @@
                 p {
                     margin: 25px 0 40px 0;
                     font-size: $main_text;
+                    color: $main_text_color;
                 }
 
                 button {
@@ -250,6 +251,7 @@
                 margin: 25px 0 40px 0;
                 font-size: 13px;
                 line-height: 26px;
+                color: $main_text_color;
             }
 
             div{

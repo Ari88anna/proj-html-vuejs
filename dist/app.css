@@ -84,6 +84,8 @@ ul {
 }
 .courses-offer li .course-description h6 {
   margin: 5px 0;
+  color: #36414e;
+  font-weight: 100;
 }
 .courses-offer li .course-description .course-info {
   display: flex;
@@ -92,6 +94,9 @@ ul {
   border-top: 1px solid #e5e5e5;
   text-align: right;
   margin: 15px 0;
+}
+.courses-offer li .course-description .course-info .stars {
+  display: flex;
 }
 .courses-offer li .course-description .course-info .cost div {
   font-size: 10px;
@@ -156,7 +161,7 @@ ul {
   box-shadow: -3px 2px 5px #e5e5e5;
 }
 .fixed-element a {
-  color: #e0e0e0;
+  color: #36414e;
 }
 
 .header-top-nav {
@@ -336,7 +341,7 @@ ul {
 .banner .text-content p {
   font-size: 12px;
   font-weight: bold;
-  color: #273044;
+  color: #36414e;
   margin: 25px 0 40px 0;
 }
 
@@ -422,7 +427,7 @@ ul {
 }
 .popular-courses-section .centred p {
   font-size: 14px;
-  color: #273044;
+  color: #36414e;
 }
 .popular-courses-section .slider-arrow {
   display: flex;
@@ -436,7 +441,7 @@ ul {
   display: flex;
   align-items: center;
   width: 50%;
-  border: 1px solid #dde6eb;
+  border: 1px solid #e5e5e5;
   padding: 50px 30px;
 }
 .join-us-section .container .join-us-box .box-img {
@@ -453,6 +458,7 @@ ul {
 .join-us-section .container .join-us-box .box-text p {
   margin: 25px 0 40px 0;
   font-size: 12px;
+  color: #36414e;
 }
 .join-us-section .container .join-us-box .box-text button:hover {
   background-color: #457992;
@@ -482,6 +488,7 @@ ul {
   margin: 25px 0 40px 0;
   font-size: 13px;
   line-height: 26px;
+  color: #36414e;
 }
 .testimonial .small-container .testimonial-text div {
   font-weight: 600;
