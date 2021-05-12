@@ -21,7 +21,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
-    
+
     <!-- ROOT -->
     <div id="root">
 
@@ -1116,11 +1116,11 @@
                     <!-- Social network -->
                     <div class="social-network">
                         <h5>Social Network</h5>
-                        <div>
-                            <a href="">
-                                <i></i>
-                            </a>
-                        </div>
+
+                            <a v-for="social in socialListFoot" href="">
+                                <i :class="'fab fa' + social.name" :style="{'background-color': social.bg}"></i>
+                            </a>  
+
                     </div>
                     <!-- end Social network -->
 

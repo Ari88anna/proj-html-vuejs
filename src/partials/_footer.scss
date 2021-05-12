@@ -33,6 +33,20 @@
                     font-size: $small_text;
                     color: #959285; 
                 }
+
+            }&.social-network {
+                a {
+                    color: $text_colored_bg
+                }
+                i {
+                    width: 30px;
+                    height: 30px;
+                    
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 30px; 
+                    margin: 5px 5px;
+                }
             }
 
         }

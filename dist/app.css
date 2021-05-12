@@ -533,6 +533,17 @@ ul {
   font-size: 10px;
   color: #959285;
 }
+.upper-footer .small-container div.social-network a {
+  color: white;
+}
+.upper-footer .small-container div.social-network i {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  margin: 5px 5px;
+}
 
 .lower-footer {
   background-color: #273044;
