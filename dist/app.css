@@ -85,6 +85,7 @@ ul {
 .courses-offer li .course-description h6 {
   margin: 5px 0;
   color: #36414e;
+  cursor: pointer;
   font-weight: 100;
 }
 .courses-offer li .course-description .course-info {

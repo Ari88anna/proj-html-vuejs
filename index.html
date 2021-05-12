@@ -21,7 +21,8 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
-
+    
+    <!-- ROOT -->
     <div id="root">
 
         <!-- HEADER -->
@@ -36,7 +37,7 @@
                     <div class="site-language">
 
                         <div>English</div>
-                        
+
                         <div>
                             <i class="fas fa-chevron-down"></i>
                         </div>
@@ -46,30 +47,30 @@
 
 
                     <!-- Top Nav Menu -->
-                    <div class="top-nav-menu">                        
+                    <div class="top-nav-menu">
 
                         <!-- Menu list -->
                         <ul class="menu-list">
                             <li v-for="element in topMenu">
                                 <a href="">{{element}}</a>
-                            </li>                            
-                        </ul>                        
+                            </li>
+                        </ul>
                         <!-- end Menu list -->
-                        
+
                         <!-- Social Media List -->
                         <ul class="social-media-list">
 
                             <li v-for="social in socialList">
                                 <a href=""><i :class="'fab fa' + social.name"></i></a>
                             </li>
-                            
+
 
                         </ul>
                         <!-- end Social Media List -->
 
                     </div>
                     <!-- end Top Nav Menu -->
-                    
+
                 </div>
 
             </div>
@@ -108,7 +109,7 @@
                     <div class="sign-up">
                         <div class="user">
                             <i class="far fa-user"></i>
-                            <a href="">Log in</a> 
+                            <a href="">Log in</a>
                         </div>
                         <button class="btn">Sign up</button>
                         <a href=""><i class="far fa-bookmark"></i></a>
@@ -124,7 +125,7 @@
 
             <!-- Header - bottom Nav  -->
             <div class="header-bottom-nav">
-                
+
                 <ul class="centred-menu">
                     <li>
                         <i class="fas fa-chart-line"></i>
@@ -136,7 +137,7 @@
                     </li>
                     <li>
                         <i class="fas fa-cog"></i>
-                        <a href="">Development</a> 
+                        <a href="">Development</a>
                     </li>
                     <li>
                         <i class="far fa-smile"></i>
@@ -146,18 +147,18 @@
                         <i class="fas fa-mail-bulk"></i>
                         <a href="">Office Productivity</a>
                     </li>
-                </ul> 
-                
+                </ul>
+
 
             </div>
             <!--end  Header - bottom Nav  -->
 
-        </header>     
+        </header>
         <!-- end HEADER -->
 
 
         <!-- MAIN -->
-        <main>            
+        <main>
 
             <!-- Jumbotron section -->
             <section class="jumbotron-section">
@@ -177,7 +178,7 @@
                 </div>
                 <!-- end Jumbo img -->
 
-            </section>            
+            </section>
             <!-- end Jumbotron section -->
 
 
@@ -190,9 +191,10 @@
 
                     <!-- Courses offer -->
                     <ul class="courses-offer">
-                        <!-- Single course -->
+
+                        <!-- Single course in Popular Development Courses section -->
                         <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
+                            <img src="img/895786_7b4b_2-272x161.jpg" alt="IOS10">
 
                             <div class="course-description">
                                 <a href="">Development <span><i class="fas fa-angle-right"></i></span></a>
@@ -215,29 +217,146 @@
 
                             </div>
                         </li>
-                        <!-- end Single course -->
+                        <!-- end Single course in Popular Development Courses section -->
 
+                        <!-- Single course in Popular Development Courses section -->
                         <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
+                            <img src="img/246154_d8b0_3-272x161.jpg" alt="CSS">
+
+                            <div class="course-description">
+                                <a href="">Development <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>Web Design for Beginners: Real World Coding in HTML & CSS</h6>
+
+                                <div class="course-info">
+
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
+                                    <div class="cost">
+                                        <div class="discount">$ 129.99</div>
+                                        <div>$ 65</div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </li>
+                        <!-- end Single course in Popular Development Courses section -->
 
+                        <!-- Single course in Popular Development Courses section -->
                         <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
+                            <img src="img/752950_b773-272x161.jpg" alt="GitHub">
+
+                            <div class="course-description">
+                                <a href="">Development <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>GitHub Ultimate: Master Git and GitHub - Beginner to Expert</h6>
+
+                                <div class="course-info">
+
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
+
+                                    <div class="cost">
+                                        <div class="discount">$ 99.99</div>
+                                        <div>$ 50</div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </li>
+                        <!-- end Single course in Popular Development Courses section -->
 
+
+                        <!-- Single course in Popular Development Courses section -->
                         <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
+                            <img src="img/1253188_58f7_2-272x161.jpg" alt="IOS11">
+
+                            <div class="course-description">
+                                <a href="">Development <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>The Complete IOS 11& Swift Developer Course - Build 20</h6>
+
+                                <div class="course-info">
+
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
+                                    <div class="cost">
+                                        <div class="discount">$ 199.99</div>
+                                        <div>$ 100</div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </li>
+                        <!-- end Single course in Popular Development Courses section -->
 
+
+                        <!-- Single course in Popular Development Courses section -->
                         <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
+                            <img src="img/919872_ed54_6-272x161.jpg" alt="Android Java">
+
+                            <div class="course-description">
+                                <a href="">Development <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>Android Java Masterclass - Become an App Developer</h6>
+
+                                <div class="course-info">
+
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
+                                    <div class="cost">
+                                        <div class="discount">$ 99.99</div>
+                                        <div>$ 50</div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </li>
+                        <!-- end Single course in Popular Development Courses section -->
 
+
+                        <!-- Single course in Popular Development Courses section -->
                         <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
-                        </li>                       
+                            <img src="img/951684_9c1a_2-272x161.jpg" alt="Xamarin">
 
+                            <div class="course-description">
+                                <a href="">Development <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>Xamarin Forms: Build Native Cross-platform App with C#</h6>
 
+                                <div class="course-info">
+
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
+                                    <div class="cost">
+                                        <div class="discount">$ 189.99</div>
+                                        <div>$ 95</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <!-- end Single course in Popular Development Courses section -->
                     </ul>
                     <!-- end Courses offer -->
 
@@ -279,17 +398,17 @@
 
                 <!-- Recent courses title and menu -->
                 <div class="recent-courses centred">
-                    
+
                     <h2>Recent courses</h2>
 
                     <ul class="centred-menu">
                         <li><a  class="active" href="">All Categories</a></li>
                         <li><a href="">Business</a></li>
-                        <li><a href="">Design</a></li> 
+                        <li><a href="">Design</a></li>
                         <li><a href="">Development</a></li>
                         <li><a href="">IT & Software</a></li>
                         <li><a href="">Lifestyle</a></li>
-                        <li><a href="">Marketing</a></li> 
+                        <li><a href="">Marketing</a></li>
                         <li><a href="">Office Productivity</a></li>
                     </ul>
                 </div>
@@ -301,9 +420,10 @@
 
                     <!-- Courses offer -->
                     <ul class="courses-offer">
-                        <!-- Single course -->
+
+                        <!-- Single course in Recent Courses section -->
                         <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
+                            <img src="img/895786_7b4b_2-272x161.jpg" alt="IOS10">
 
                             <div class="course-description">
                                 <a href="">Development <span><i class="fas fa-angle-right"></i></span></a>
@@ -311,7 +431,13 @@
 
                                 <div class="course-info">
 
-                                    <div class="stars"><img src="img/starfull.svg" alt="stars"></div>
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
                                     <div class="cost">
                                         <div class="discount">$ 199.99</div>
                                         <div>$ 100</div>
@@ -320,39 +446,25 @@
 
                             </div>
                         </li>
-                        <!-- end Single course -->
+                        <!-- end Single course in Recent Courses section -->
 
+                        <!-- Single course in Recent Courses section -->
                         <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
-                        </li>
-
-                        <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
-                        </li>
-
-                        <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
-                        </li>
-
-                        <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
-                        </li>
-
-                        <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
-                        </li>                       
-
-                        <!-- Single course -->
-                        <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
+                            <img src="img/1561458_7f3b-272x161.jpg" alt="CSS">
 
                             <div class="course-description">
-                                <a href="">Development <span><i class="fas fa-angle-right"></i></span></a>
-                                <h6>The Complete IOS 10& Swift 3 Developer Course</h6>
+                                <a href="">Design <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>CSS - The Complete Guide 2020(incl. Flexbox, Grid & Sass)</h6>
 
                                 <div class="course-info">
 
-                                    <div class="stars"><img src="img/starfull.svg" alt="stars"></div>
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">                                        
+                                    </div>
                                     <div class="cost">
                                         <div class="discount">$ 199.99</div>
                                         <div>$ 100</div>
@@ -361,27 +473,278 @@
 
                             </div>
                         </li>
-                        <!-- end Single course -->
+                        <!-- end Single course in Recent Courses section -->
 
+                        <!-- Single course in Popular Development Courses section -->
                         <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
-                        </li>
+                            <img src="img/246154_d8b0_3-272x161.jpg" alt="HTML & CSS">
 
-                        <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
-                        </li>
+                            <div class="course-description">
+                                <a href="">Development <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>Web Design for Beginners: Real World Coding in HTML & CSS</h6>
 
-                        <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
-                        </li>
+                                <div class="course-info">
 
-                        <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
-                        </li>
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
+                                    <div class="cost">
+                                        <div class="discount">$ 129.99</div>
+                                        <div>$ 65</div>
+                                    </div>
+                                </div>
 
-                        <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
+                            </div>
                         </li>
+                        <!-- end Single course in Popular Development Courses section -->
+
+                        <!-- Single course in Recent Courses section -->
+                        <li>
+                            <img src="img/1208228_d61c_4-272x161.jpg" alt="Digitally Painting">
+
+                            <div class="course-description">
+                                <a href="">Design <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>Digitally Painting Light and Color: Amateur to Master</h6>
+
+                                <div class="course-info">
+
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
+                                    <div class="cost">
+                                        <div class="discount">$ 139.99</div>
+                                        <div>$ 70</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <!-- end Single course in Recent Courses section -->
+
+                        <!-- Single course in Recent Courses section -->
+                        <li>
+                            <img src="img/186792_41e4_4-272x161.jpg" alt="Arabic Calligraphy">
+
+                            <div class="course-description">
+                                <a href="">Arts & Crafts <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>Become an Arabic Calligraphy Artist From Scratch</h6>
+
+                                <div class="course-info">
+
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
+                                    <div class="cost">                                        
+                                        <div>$ 100</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <!-- end Single course in Recent Courses section -->
+
+                        <!-- Single course in Recent Courses section -->
+                        <li>
+                            <img src="img/1776542_30b1-272x161.jpg" alt="Google searching Ninja">
+
+                            <div class="course-description">
+                                <a href="">Google <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>Google Searching Ninja!</h6>
+
+                                <div class="course-info">
+
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
+                                    <div class="cost">
+                                        <div class="discount">$ 89.99</div>
+                                        <div>$ 45</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <!-- end Single course in Recent Courses section -->
+
+                        <!------------------------------------------------ end first courser row ----------------------------------------------->
+
+                        <!-- Single course in Recent Courses section -->
+                        <li>
+                            <img src="img/949316_2a64_11-272x161.jpg" alt="Watercolor">
+
+                            <div class="course-description">
+                                <a href="">Arts & Craft <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>Foundations for Mastering Watercolor Painting</h6>
+
+                                <div class="course-info">
+
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
+                                    <div class="cost">
+                                        <div class="discount">$ 19.99</div>
+                                        <div>$ 10</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <!-- end Single course in Recent Courses section -->
+
+                        <!-- Single course in Recent Courses section -->
+                        <li>
+                            <img src="img/366802_6fcc-272x161.jpg" alt="Wine">
+
+                            <div class="course-description">
+                                <a href="">Food & Beverage <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>Get Wine-Smart</h6>
+
+                                <div class="course-info">
+
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
+                                    <div class="cost">
+                                        <div class="discount">$ 49.99</div>
+                                        <div>$ 25</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <!-- end Single course in Recent Courses section -->
+
+                        <!-- Single course in Recent Courses section -->
+                        <li>
+                            <img src="img/381588_2e6d_4-272x161.jpg" alt="Pencil drawing">
+
+                            <div class="course-description">
+                                <a href="">Arts & Craft <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>The Colored Pencil Drawing Course</h6>
+
+                                <div class="course-info">
+
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
+                                    <div class="cost">
+                                        <div class="discount">$ 34.99</div>
+                                        <div>$ 18</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <!-- end Single course in Recent Courses section -->
+
+                        <!-- Single course in Recent Courses section -->
+                        <li>
+                            <img src="img/838056_611a_3-272x161.jpg" alt="Watercolor">
+
+                            <div class="course-description">
+                                <a href="">Arts & Craft <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>Paint Realistic Watercolor and Botanicals - STUDIO BASIC</h6>
+
+                                <div class="course-info">
+
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
+                                    <div class="cost">
+                                        <div class="discount">$ 69.99</div>
+                                        <div>$ 35</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <!-- end Single course in Recent Courses section -->
+
+                        <!-- Single course in Recent Courses section -->
+                        <li>
+                            <img src="img/1414956_d944_15-272x161.jpg" alt="Brushstrokes">
+
+                            <div class="course-description">
+                                <a href="">Arts & Craft <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>Mastering Brushstrokes - Part 1</h6>
+
+                                <div class="course-info">
+
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
+                                    <div class="cost">
+                                        <div class="discount">$ 19.99</div>
+                                        <div>$ 10</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <!-- end Single course in Recent Courses section -->
+
+                        <!-- Single course in Recent Courses section -->
+                        <li>
+                            <img src="img/1109398_4c13-272x161.jpg" alt="Magnolias">
+
+                            <div class="course-description">
+                                <a href="">Arts & Craft <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>Paint Realistic Watercolor and Botanicals - MAGNOLIAS</h6>
+
+                                <div class="course-info">
+
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
+                                    <div class="cost">
+                                        <div class="discount">$ 69.99</div>
+                                        <div>$ 35</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <!-- end Single course in Recent Courses section -->
 
                     </ul>
                     <!-- end Courses offer -->
@@ -424,9 +787,9 @@
                         <div class="input-container">
                             <input id="enter-email" type="text" placeholder="Enter your E-mail">
                             <div class="subscribe-btn">Subscribe</div>
-                        </div>                     
+                        </div>
                         <!-- end Input container -->
-                        
+
                     </div>
                     <!-- end Subscribe enter email -->
 
@@ -436,7 +799,7 @@
 
             <!-- end Subscribe section -->
 
-            
+
             <!-- Popular Courses (with slider) section -->
 
             <section class="popular-courses-section">
@@ -454,9 +817,9 @@
                     <!-- Courses offer -->
                     <ul class="courses-offer">
 
-                        <!-- Single course -->
+                        <!-- Single course in Popular Courses section -->
                         <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
+                            <img src="img/895786_7b4b_2-272x161.jpg" alt="IOS10">
 
                             <div class="course-description">
                                 <a href="">Development <span><i class="fas fa-angle-right"></i></span></a>
@@ -464,7 +827,13 @@
 
                                 <div class="course-info">
 
-                                    <div class="stars"><img src="img/starfull.svg" alt="stars"></div>
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
                                     <div class="cost">
                                         <div class="discount">$ 199.99</div>
                                         <div>$ 100</div>
@@ -473,31 +842,147 @@
 
                             </div>
                         </li>
-                        <!-- end Single course -->
+                        <!-- end Single course in Popular Courses section -->
 
+                        <!-- Single course in Popular Courses section -->
                         <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
-                        </li>
+                            <img src="img/1561458_7f3b-272x161.jpg" alt="CSS">
 
-                        <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
-                        </li>
+                            <div class="course-description">
+                                <a href="">Design <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>CSS - The Complete Guide 2020(incl. Flexbox, Grid & Sass)</h6>
 
-                        <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
-                        </li>
+                                <div class="course-info">
 
-                        <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
-                        </li>
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">                                        
+                                    </div>
+                                    <div class="cost">
+                                        <div class="discount">$ 199.99</div>
+                                        <div>$ 100</div>
+                                    </div>
+                                </div>
 
-                        <li>
-                            <img src="img/895786_7b4b_2-272x161.jpg" alt="">
+                            </div>
                         </li>
+                        <!-- end Single course in Popular Courses section -->
+
+                        <!-- Single course in Popular Development Courses section -->
+                        <li>
+                            <img src="img/246154_d8b0_3-272x161.jpg" alt="HTML & CSS">
+
+                            <div class="course-description">
+                                <a href="">Development <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>Web Design for Beginners: Real World Coding in HTML & CSS</h6>
+
+                                <div class="course-info">
+
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
+                                    <div class="cost">
+                                        <div class="discount">$ 129.99</div>
+                                        <div>$ 65</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <!-- end Single course in Popular Development Courses section -->
+
+                        <!-- Single course in Popular Courses section -->
+                        <li>
+                            <img src="img/1208228_d61c_4-272x161.jpg" alt="Digitally Painting">
+
+                            <div class="course-description">
+                                <a href="">Design <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>Digitally Painting Light and Color: Amateur to Master</h6>
+
+                                <div class="course-info">
+
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
+                                    <div class="cost">
+                                        <div class="discount">$ 139.99</div>
+                                        <div>$ 70</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <!-- end Single course in Popular Courses section -->
+
+                        <!-- Single course in Popular Courses section -->
+                        <li>
+                            <img src="img/186792_41e4_4-272x161.jpg" alt="Arabic Calligraphy">
+
+                            <div class="course-description">
+                                <a href="">Arts & Crafts <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>Become an Arabic Calligraphy Artist From Scratch</h6>
+
+                                <div class="course-info">
+
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
+                                    <div class="cost">                                        
+                                        <div>$ 100</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <!-- end Single course in Popular Courses section -->
+
+                        <!-- Single course in Popular Courses section -->
+                        <li>
+                            <img src="img/1776542_30b1-272x161.jpg" alt="Google searching Ninja">
+
+                            <div class="course-description">
+                                <a href="">Google <span><i class="fas fa-angle-right"></i></span></a>
+                                <h6>Google Searching Ninja!</h6>
+
+                                <div class="course-info">
+
+                                    <div class="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/starfull.svg" alt="stars">
+                                        <img src="img/staremptyl.svg" alt="stars">
+                                    </div>
+                                    <div class="cost">
+                                        <div class="discount">$ 89.99</div>
+                                        <div>$ 45</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <!-- end Single course in Popular Courses section -->
+
+                        
 
                     </ul>
                     <!-- end Courses offer -->
-                    
+
                 </div>
                 <!-- end container -->
 
@@ -559,7 +1044,7 @@
             </section>
             <!-- end Join us section -->
 
-            
+
 
             <!-- Testimonial section -->
             <section>
@@ -572,7 +1057,7 @@
                         <div class="testimonial-text">
                             <h2>Investing for Your Future</h2>
 
-                            <p>It is no exaggeration to say this MasterStudy experience was transformative-both professionally and personally. 
+                            <p>It is no exaggeration to say this MasterStudy experience was transformative-both professionally and personally.
                                 This workshop will long remain a hight
                                 point of my life. Thanks again... I am feeling energized and eager to start teaching my class next week.
                                 I can't wait to use all of my new teaching tools. I will absolutely reccomend this workshop to other educators!
@@ -594,7 +1079,7 @@
 
 
 
-        </main>  
+        </main>
 
         <!-- end MAIN -->
 
@@ -606,25 +1091,29 @@
             <div class="upper-footer">
 
                 <div class="small-container">
-
+                    <!-- About us -->
                     <div class="about-us">
                         <h5>About</h5>
-                        <p>Sed nec felis pellentesque, lacinia dui sed, ultrcies sapien. 
+                        <p>Sed nec felis pellentesque, lacinia dui sed, ultrcies sapien.
                             Pellentesque orci lectus, consecteur vel, returm eu ipsum.
                             Marius accumsan eros eget libero posuere vulputate </p>
                     </div>
+                    <!-- end About us -->
 
+                    <!-- Contact us -->
                     <div class="contact-us">
                         <h5>Contact</h5>
                         <p>USA, California 20, First Avenue, California</p>
                         <p>Tel.: +1 212 458 300 32 <br>
                             Fax.: +1 212 375 24 14</p>
-                        
+
 
                         <a href="">info@masterstudy.com</a>
 
                     </div>
+                    <!-- end Contact us -->
 
+                    <!-- Social network -->
                     <div class="social-network">
                         <h5>Social Network</h5>
                         <div>
@@ -633,10 +1122,13 @@
                             </a>
                         </div>
                     </div>
+                    <!-- end Social network -->
 
+                    <!-- Discount -->
                     <div class="discount-udemy">
                         <img src="img/Top-udemy-courses-90-percent-off.jpg" alt="udemy courses 80 percent off">
                     </div>
+                    <!-- end Discount -->
 
                 </div>
 
@@ -650,22 +1142,25 @@
             <div class="lower-footer">
 
                 <div class="small-container">
+                    <!-- footer logo -->
                     <div class="footer-logo">
                         <img src="img/footer-logo2x-50x56.png" alt="small logo">
                     </div>
+                    <!-- end footer logo -->
 
+                    <!-- copyright -->
                     <div class="copyright">
-                        <div>Copyright <span><i class="far fa-copyright"></i></span> 2020. 
+                        <div>Copyright <span><i class="far fa-copyright"></i></span> 2020.
                             <a href="">MasterStudy</a> Theme by <a href="">StylemixThemes</a>
                         </div>
                     </div>
-
+                    <!-- end copyright -->
                 </div>
 
             </div>
             <!-- end Lower footer -->
 
-        </footer>            
+        </footer>
 
         <!-- end FOOTER -->
 
@@ -685,10 +1180,10 @@
 
 
     </div>
-    
+    <!-- end ROOT -->
 
 
-  
+
 
 
     <!-- link Javascript -->
