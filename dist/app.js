@@ -10,7 +10,9 @@
 var app = new Vue({
   el: '#root',
   data: {
+    //topMenu: array di link da inserire nell'header
     topMenu: ['Home', 'Pages', 'Course Format', 'Courses', 'Demos'],
+    //socialList: array di oggetti, ogni oggetto rapppresenta un social
     socialList: [{
       name: '-facebook'
     }, {
@@ -24,6 +26,7 @@ var app = new Vue({
     }, {
       name: '-youtube'
     }],
+    //socialList: array di oggetti, ogni oggetto rapppresenta un social e il suo colore di sfondo
     socialListFoot: [{
       name: 'fab fa-facebook',
       bg: '#3b5998'

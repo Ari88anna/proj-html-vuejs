@@ -308,20 +308,17 @@ ul {
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: right;
-  position: relative;
 }
 .jumbotron-section .jumbo-title {
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 63%;
   height: 100%;
   z-index: 1;
-  background: linear-gradient(247deg, rgba(0, 0, 0, 0) 20%, #ff4550 20%);
+  background: linear-gradient(245deg, rgba(0, 0, 0, 0) 20%, #ff4550 20%);
 }
 .jumbotron-section .jumbo-title div {
   width: 50%;
-  margin: 60px auto;
+  margin: auto;
+  padding-top: 60px;
 }
 .jumbotron-section .jumbo-title div h1 {
   color: white;
