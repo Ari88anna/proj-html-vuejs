@@ -25,28 +25,28 @@ var app = new Vue({
       name: '-youtube'
     }],
     socialListFoot: [{
-      name: '-facebook',
+      name: 'fab fa-facebook',
       bg: '#3b5998'
     }, {
-      name: '-instagram',
+      name: 'fab fa-instagram',
       bg: '#c32aa3'
     }, {
-      name: '-linkedin',
+      name: 'fab fa-linkedin',
       bg: '#0077b5'
     }, {
-      name: '-pinterest',
+      name: 'fab fa-pinterest',
       bg: '#bd081c'
     }, {
-      name: '-twitter',
+      name: 'fab fa-twitter',
       bg: '#1da1f2'
     }, {
-      name: '-instagram',
+      name: 'fas fa-basketball-ball',
       bg: '#ea4c89'
     }, {
-      name: '-google-plus',
+      name: 'fab fa-google-plus',
       bg: '#db4437'
     }, {
-      name: '-skype',
+      name: 'fab fa-skype',
       bg: '#00aff0'
     }]
   }

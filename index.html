@@ -9,10 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="img/favicon.ico">
     <title>Master Study</title>
@@ -111,7 +110,7 @@
                             <i class="far fa-user"></i>
                             <a href="">Log in</a>
                         </div>
-                        <button class="btn">Sign up</button>
+                        <button class="btn transform">Sign up</button>
                         <a href=""><i class="far fa-bookmark"></i></a>
                     </div>
                     <!-- end Sign up -->
@@ -161,39 +160,23 @@
         <main>
 
             <!-- Jumbotron section -->
-            <section class="jumbotron-section">
+            <section class="jumbotron-section">  
 
                 <!-- Jumbo title -->
-                <!-- <div class="jumbo-title">
-                    <div>
-                        <h1>Udemy Affiliate Sales</h1>
-                        <p>Monetize your audience and attract new customers with Udemy!</p>
-                    </div>
-                </div> -->
-                <!-- end Jumbo title -->
-
-                <!-- Jumbo img -->
-                <!-- <div class="jumbo-img">
-                    <img src="img/slide-1.jpg" alt="slide">
-                </div> -->
-                <!-- end Jumbo img -->
-
                 <div class="jumbo-title">
                     <div>
                         <h1>Udemy Affiliate Sales</h1>
                         <p>Monetize your audience and attract new customers with Udemy!</p>
                     </div>
                 </div>
-                <!-- end Jumbo title -->
-
-                
+                <!-- end Jumbo title -->                
 
             </section>
             <!-- end Jumbotron section -->
 
 
             <!-- Popular Development Courses section -->
-            <section class="padding-tb">
+            <section class="popular-courses padding-tb">
 
                 <!-- Container -->
                 <div class="container">
@@ -389,7 +372,7 @@
                         <div class="text-content">
                             <h2>Limitless learning, more possibilities</h2>
                             <p>Online couses open the opportunity for learning to almost anyone, regardless of their scheduling commitments.</p>
-                            <button class="btn">Read more</button>
+                            <button class="btn change-color">Read more</button>
                         </div>
                         <!-- end Text content -->
 
@@ -764,7 +747,7 @@
 
                 <!-- Button -->
                 <div class="centred">
-                    <button class="btn">Show all</button>
+                    <button class="btn change-color">Show all</button>
                 </div>
                 <!-- end Button -->
             </section>
@@ -1023,7 +1006,7 @@
                         <div class="box-text">
                             <h2>Become an Instructor</h2>
                             <p>Teach what you love. Masterstudy gives you the tools to create a course</p>
-                            <button class="btn">Start teaching</button>
+                            <button class="btn change-color">Start teaching</button>
 
                         </div>
 
@@ -1040,7 +1023,7 @@
                         <div class="box-text">
                             <h2>Access For Business</h2>
                             <p>Get unlimited access to 2.500 of top courses for your team.</p>
-                            <button class="btn">Doing Business</button>
+                            <button class="btn change-color">Doing Business</button>
 
                         </div>
 
@@ -1128,7 +1111,7 @@
                         <h5>Social Network</h5>
 
                             <a v-for="social in socialListFoot" href="">
-                                <i :class="'fab fa' + social.name" :style="{'background-color': social.bg}"></i>
+                                <i :class="social.name" :style="{'background-color': social.bg}"></i>
                             </a>  
 
                     </div>

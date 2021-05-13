@@ -33,6 +33,14 @@
    
 }
 
+// Popular courses
+.popular-courses {
+
+    h4 {
+        color: $brand_text_color;
+    }
+}
+
 // Banner
 .banner {
     background-image: url("../img/bg.png");
@@ -73,8 +81,9 @@
         
                 a {
                     color: $i_menu_text;
-
-                    &.active {
+                    
+                    &.active,
+                    &:hover {
                         background-color: $brand_secondary_color;
                         padding: 5px;
                         border-radius: 15px;
@@ -97,21 +106,22 @@
 
 .subscribe-section {
     background-color: $brand_primary_color;
-    color: white;
-    padding: $standard_padding;
+    color: $text_colored_bg;
+    padding: 20px 0 40px 0;
 
     .small-container {
-        @include flex-jsb;
+        @include flex_jsb_center;
 
         .subscribe-text {
-            width: 59%;
+            width: 58%;
 
             h5 {
                 font-weight: 600;
                 padding-bottom: $padding_bottom_sub_section;
             }
             p {
-                font-size: $main_text;
+                font-size: $small_text;
+                font-family: $secondary_font_family;
             }
 
         }
@@ -124,7 +134,8 @@
 
                 label {
                     text-transform: uppercase;
-                    font-size: $small_text;                    
+                    font-size: $smaller_text; 
+                    font-family: $secondary_font_family;                   
                 }
             }
 
@@ -138,7 +149,8 @@
                 
                 .subscribe-btn {
                     @include input_append;
-                    font-size: $small_text;
+                    font-size: 9px;
+                    font-family: $secondary_font_family;
                     text-transform: uppercase;
                     padding: 0 15px;
                 }
@@ -197,13 +209,7 @@
                     margin: 25px 0 40px 0;
                     font-size: $main_text;
                     color: $main_text_color;
-                }
-
-                button {
-                    &:hover {
-                        background-color: $i_menu_text;
-                    }
-                }
+                }                
             }
 
             &.access {
@@ -234,13 +240,20 @@
             }
             p {
                 margin: 25px 0 40px 0;
-                font-size: 13px;
+                font-size: $main_text;
                 line-height: 26px;
                 color: $main_text_color;
             }
 
             div{
                 font-weight: 600;
+                font-size: $main_text;
+                font-family: $secondary_font_family;
+            }
+
+            small {
+                font-size: $main_text;
+                color: $main_text_color;
             }
 
             .arrow-speech {
@@ -251,7 +264,7 @@
                 border-left: 15px solid $text_colored_bg;
                 position: absolute;
                 left: 100%;
-                top: 40%;
+                top: 48%;
             }
 
         }

@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 img {
@@ -62,7 +62,18 @@ ul {
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 700;
+  font-family: "Montserrat", sans-serif;
   font-size: 10px;
+}
+.btn.transform {
+  margin: 0 15px;
+  transition: all 300ms;
+}
+.btn.transform:hover {
+  transform: scale(1.2);
+}
+.btn.change-color:hover {
+  background-color: #457992;
 }
 
 .courses-offer {
@@ -79,14 +90,20 @@ ul {
   padding: 0 10px;
 }
 .courses-offer li .course-description a {
-  font-size: 10px;
+  font-size: 8px;
   color: #c6b9af;
+}
+.courses-offer li .course-description a:hover {
+  text-decoration: underline;
 }
 .courses-offer li .course-description h6 {
   margin: 5px 0;
-  color: #36414e;
+  color: #5d6372;
   cursor: pointer;
   font-weight: 100;
+}
+.courses-offer li .course-description h6:hover {
+  text-decoration: underline;
 }
 .courses-offer li .course-description .course-info {
   display: flex;
@@ -134,8 +151,8 @@ ul {
 }
 
 .arrow-bg {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   background-color: white;
   border: 1px solid #e0e0e0;
   line-height: 30px;
@@ -154,7 +171,7 @@ ul {
   justify-content: space-around;
   align-items: center;
   position: fixed;
-  bottom: 50%;
+  bottom: 0;
   right: 0;
   width: 50px;
   height: 190px;
@@ -162,7 +179,10 @@ ul {
   box-shadow: -3px 2px 5px #e5e5e5;
 }
 .fixed-element a {
-  color: #36414e;
+  color: #5d6372;
+}
+.fixed-element a:hover {
+  color: #aaaaaa;
 }
 
 .header-top-nav {
@@ -215,7 +235,7 @@ ul {
   color: #c6b9af;
 }
 .header-middle-nav .container .master-logo {
-  width: 200px;
+  width: 180px;
 }
 .header-middle-nav .container .master-logo img {
   vertical-align: middle;
@@ -226,12 +246,16 @@ ul {
 }
 .header-middle-nav .container .search-courses-input label {
   text-transform: uppercase;
+  font-size: 8px;
+  font-weight: 600;
   padding-right: 10px;
+  color: #aaaaaa;
 }
 .header-middle-nav .container .search-courses-input label i {
   font-size: 7px;
   color: #aaaaaa;
   padding-right: 5px;
+  cursor: pointer;
 }
 .header-middle-nav .container .search-courses-input input {
   border: 0;
@@ -248,7 +272,7 @@ ul {
   top: 0;
   text-align: center;
   line-height: 30px;
-  width: 35px;
+  width: 40px;
 }
 .header-middle-nav .container .affiliates {
   display: flex;
@@ -270,13 +294,6 @@ ul {
 }
 .header-middle-nav .container .sign-up .user {
   font-size: 10px;
-}
-.header-middle-nav .container .sign-up button {
-  margin: 0 15px;
-  transition: all 300ms;
-}
-.header-middle-nav .container .sign-up button:hover {
-  transform: scale(1.2);
 }
 
 .header-bottom-nav {
@@ -315,6 +332,10 @@ ul {
   color: white;
 }
 
+.popular-courses h4 {
+  color: #273044;
+}
+
 .banner {
   background-image: url("../img/bg.png");
   background-size: cover;
@@ -334,7 +355,7 @@ ul {
 .banner .text-content p {
   font-size: 12px;
   font-weight: bold;
-  color: #36414e;
+  color: #5d6372;
   margin: 25px 0 40px 0;
 }
 
@@ -348,7 +369,7 @@ ul {
 .recent-courses-section .recent-courses .centred-menu li a {
   color: #457992;
 }
-.recent-courses-section .recent-courses .centred-menu li a.active {
+.recent-courses-section .recent-courses .centred-menu li a.active, .recent-courses-section .recent-courses .centred-menu li a:hover {
   background-color: #f0f4fa;
   padding: 5px;
   border-radius: 15px;
@@ -363,21 +384,23 @@ ul {
 .subscribe-section {
   background-color: #ff4550;
   color: white;
-  padding: 20px 0;
+  padding: 20px 0 40px 0;
 }
 .subscribe-section .small-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .subscribe-section .small-container .subscribe-text {
-  width: 59%;
+  width: 58%;
 }
 .subscribe-section .small-container .subscribe-text h5 {
   font-weight: 600;
   padding-bottom: 10px;
 }
 .subscribe-section .small-container .subscribe-text p {
-  font-size: 12px;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 .subscribe-section .small-container .subscribe-enter-email {
   width: 40%;
@@ -387,7 +410,8 @@ ul {
 }
 .subscribe-section .small-container .subscribe-enter-email .label-container label {
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 8px;
+  font-family: "Montserrat", sans-serif;
 }
 .subscribe-section .small-container .subscribe-enter-email .input-container {
   position: relative;
@@ -406,7 +430,8 @@ ul {
   top: 0;
   text-align: center;
   line-height: 30px;
-  font-size: 10px;
+  font-size: 9px;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   padding: 0 15px;
 }
@@ -423,7 +448,7 @@ ul {
 }
 .popular-courses-section .centred p {
   font-size: 14px;
-  color: #36414e;
+  color: #5d6372;
 }
 .popular-courses-section .slider-arrow {
   display: flex;
@@ -454,10 +479,7 @@ ul {
 .join-us-section .container .join-us-box .box-text p {
   margin: 25px 0 40px 0;
   font-size: 12px;
-  color: #36414e;
-}
-.join-us-section .container .join-us-box .box-text button:hover {
-  background-color: #457992;
+  color: #5d6372;
 }
 .join-us-section .container .join-us-box.access {
   margin-left: 15px;
@@ -482,12 +504,18 @@ ul {
 }
 .testimonial .small-container .testimonial-text p {
   margin: 25px 0 40px 0;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 26px;
-  color: #36414e;
+  color: #5d6372;
 }
 .testimonial .small-container .testimonial-text div {
   font-weight: 600;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+}
+.testimonial .small-container .testimonial-text small {
+  font-size: 12px;
+  color: #5d6372;
 }
 .testimonial .small-container .testimonial-text .arrow-speech {
   width: 0;
@@ -497,13 +525,14 @@ ul {
   border-left: 15px solid white;
   position: absolute;
   left: 100%;
-  top: 40%;
+  top: 48%;
 }
 
 .upper-footer {
   background-color: #273044;
   color: white;
   border-bottom: 1px solid white;
+  padding: 30px 0;
 }
 .upper-footer .small-container {
   display: flex;
@@ -527,6 +556,9 @@ ul {
 .upper-footer .small-container div.contact-us a {
   font-size: 10px;
   color: #959285;
+}
+.upper-footer .small-container div.contact-us a:hover {
+  text-decoration: underline;
 }
 .upper-footer .small-container div.social-network a {
   color: white;

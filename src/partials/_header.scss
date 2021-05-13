@@ -56,7 +56,7 @@
         color: $secondary_text_color;
 
         .master-logo {
-            width: 200px;  
+            width: 180px;  
             img {
                 vertical-align: middle;
             }          
@@ -67,11 +67,15 @@
             font-size: $small_text;
             label {
                 text-transform: uppercase;
+                font-size: $smaller_text;
+                font-weight: 600;
                 padding-right: 10px;
+                color: $header_top_text_color;
                 i {
                     font-size: 7px;
                     color: $header_top_text_color;
                     padding-right: 5px;
+                    cursor: pointer;
                 }                
             }
 
@@ -84,7 +88,7 @@
 
             .search-symbol {
                 @include input_append;
-                width: 35px;               
+                width: 40px;               
             }
         }
 
@@ -109,18 +113,7 @@
             }
             .user {
                 font-size: $small_text;
-            }
-
-            button {
-                margin: 0 15px;
-                transition: all 300ms; 
-                
-                &:hover {
-                    transform: scale(1.2);
-                }
-            }
-
-            
+            }                       
         }
     }    
 }
