@@ -22,8 +22,8 @@ img {
   margin: auto;
 }
 
-section {
-  margin-bottom: 40px;
+.padding-tb {
+  padding: 50px 0;
 }
 
 a {
@@ -95,6 +95,7 @@ ul {
   border-top: 1px solid #e5e5e5;
   text-align: right;
   margin: 15px 0;
+  padding-top: 10px;
 }
 .courses-offer li .course-description .course-info .stars {
   display: flex;
@@ -104,8 +105,7 @@ ul {
 }
 .courses-offer li .course-description .course-info .cost div.discount {
   color: #c6b9af;
-  -webkit-text-decoration: line-through 2px;
-          text-decoration: line-through 2px;
+  text-decoration: line-through;
 }
 
 ::-moz-placeholder {
@@ -170,7 +170,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
-  font-size: 10px;
+  font-size: 8px;
   color: #aaaaaa;
   font-family: "Montserrat", sans-serif;
 }
@@ -201,7 +201,7 @@ ul {
 }
 .header-top-nav .top-nav-menu .social-media-list li i {
   color: #aaaaaa;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .header-middle-nav {
@@ -237,7 +237,7 @@ ul {
   border: 0;
   background-color: #f0f4fa;
   height: 30px;
-  width: 450px;
+  width: 400px;
 }
 .header-middle-nav .container .search-courses-input .search-symbol {
   background-color: #457992;
@@ -282,45 +282,37 @@ ul {
 .header-bottom-nav {
   background-color: #273044;
   color: white;
+  margin-bottom: 20px;
 }
 
 .jumbotron-section {
+  background-image: url("../img/slide-1.jpg");
+  height: 280px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
   position: relative;
-  height: 275px;
-  margin: 20px 0;
 }
 .jumbotron-section .jumbo-title {
   position: absolute;
   left: 0;
   top: 0;
-  width: 65%;
+  width: 63%;
   height: 100%;
   z-index: 1;
-  background: linear-gradient(245deg, rgba(0, 0, 0, 0) 20%, #ff4550 20%);
+  background: linear-gradient(247deg, rgba(0, 0, 0, 0) 20%, #ff4550 20%);
 }
 .jumbotron-section .jumbo-title div {
   width: 50%;
-  margin: auto;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  margin: 60px auto;
 }
 .jumbotron-section .jumbo-title div h1 {
   color: white;
   font-size: 35px;
+  margin-bottom: 20px;
 }
 .jumbotron-section .jumbo-title div p {
   color: white;
-}
-.jumbotron-section .jumbo-img {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 50%;
-  height: 100%;
-}
-.jumbotron-section .jumbo-img img {
-  height: 100%;
 }
 
 .banner {
@@ -375,16 +367,17 @@ ul {
 }
 .subscribe-section .small-container {
   display: flex;
+  justify-content: space-between;
 }
 .subscribe-section .small-container .subscribe-text {
-  width: 60%;
+  width: 59%;
 }
-.subscribe-section .small-container .subscribe-text h4 {
-  font-weight: 100;
+.subscribe-section .small-container .subscribe-text h5 {
+  font-weight: 600;
   padding-bottom: 10px;
 }
 .subscribe-section .small-container .subscribe-text p {
-  font-size: 10px;
+  font-size: 12px;
 }
 .subscribe-section .small-container .subscribe-enter-email {
   width: 40%;
@@ -420,7 +413,9 @@ ul {
 
 .popular-courses-section {
   background-color: #f0f4fa;
-  padding: 20px 0;
+}
+.popular-courses-section .centred {
+  margin-bottom: 20px;
 }
 .popular-courses-section .centred h2 {
   font-size: 35px;
@@ -520,7 +515,7 @@ ul {
 }
 .upper-footer .small-container div h5 {
   text-transform: uppercase;
-  margin-bottom: 40px;
+  padding-bottom: 20px;
 }
 .upper-footer .small-container div.about-us p {
   font-size: 10px;

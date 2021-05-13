@@ -1,46 +1,36 @@
 // Jumbotron
-.jumbotron-section {
+.jumbotron-section {    
+    background-image: url("../img/slide-1.jpg");    
+    height: 280px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
     position: relative;
-    height: 275px;
-    margin: 20px 0;
 
     .jumbo-title {
         position: absolute;
         left: 0;
         top: 0;
-        width: 65%;
+        width: 63%;
         height: 100%;        
         z-index: 1;
-        background: linear-gradient(245deg, rgba(0,0,0,0) 20%, $brand_primary_color 20%);       
+        background: linear-gradient(247deg, rgba(0,0,0,0) 20%, $brand_primary_color 20%);       
 
         div {
             width: 50%;
-            margin: auto;            
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
+            margin: 60px auto;
 
             h1 {
                 color: $text_colored_bg;
                 font-size: 35px;
+                margin-bottom: 20px;
             }
             p {
                 color: $text_colored_bg;
             }
         }
     }
-
-    .jumbo-img {
-        position: absolute;
-        right:0; 
-        top: 0;       
-        width: 50%;
-        height: 100%;
-
-        img {
-            height: 100%;
-        }
-    }
+   
 }
 
 // Banner
@@ -111,17 +101,17 @@
     padding: $standard_padding;
 
     .small-container {
-        @include flex;
+        @include flex-jsb;
 
         .subscribe-text {
-            width: 60%;
+            width: 59%;
 
-            h4 {
-                font-weight: 100;
+            h5 {
+                font-weight: 600;
                 padding-bottom: $padding_bottom_sub_section;
             }
             p {
-                font-size: $small_text;
+                font-size: $main_text;
             }
 
         }
@@ -143,10 +133,7 @@
                 input {
                     width: 100%;
                     height: 30px;
-                    border: 0;
-
-                    
-                    
+                    border: 0;            
                 } 
                 
                 .subscribe-btn {
@@ -156,9 +143,6 @@
                     padding: 0 15px;
                 }
             }
-
-            
-
         }
     }
 }
@@ -166,10 +150,11 @@
 // Popular courses section
 
 .popular-courses-section {
-    background-color: $brand_secondary_color;
-    padding: $standard_padding;
+    background-color: $brand_secondary_color;    
 
     .centred {
+        margin-bottom: 20px;
+        
         h2 {
             @include primary_section_title;
         }

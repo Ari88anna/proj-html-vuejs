@@ -1,7 +1,7 @@
 .header-top-nav {    
     @include flex_jsb_center;
     padding: 10px 0;
-    font-size: $small_text;
+    font-size: $smaller_text;
     color: $header_top_text_color;  
     font-family: $secondary_font_family; 
      
@@ -39,7 +39,7 @@
 
                 i{
                     color: $header_top_text_color;
-                    font-size: 12px;
+                    font-size: $small_text;
                 }
             }
         }
@@ -79,7 +79,7 @@
                 border: 0;
                 background-color: $brand_secondary_color;
                 height: $input_append_height;
-                width: 450px;                
+                width: 400px;                
             }
 
             .search-symbol {
@@ -127,5 +127,6 @@
 
 .header-bottom-nav {
     background-color: $brand_text_color;
-    color: $text_colored_bg;      
+    color: $text_colored_bg;
+    margin-bottom: 20px;    
 }
