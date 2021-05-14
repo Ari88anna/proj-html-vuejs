@@ -54,7 +54,7 @@ ul {
     };
 }
 
-.btn {
+.btn-crimson {
     background-color: $brand_primary_color;
     border: 0;
     padding: 15px 25px;
@@ -100,15 +100,18 @@ ul {
                 &:hover {
                     text-decoration: underline;
                 }
-            }
+            }           
 
-            h6 {
+            .course-title {
                 margin: 5px 0;
-                color: $main_text_color;
-                cursor: pointer;                
-                font-weight: 100;
-                &:hover {
-                    text-decoration: underline;
+                    a {
+                        display: inline-block;
+                        color: $main_text_color;
+                        font-size: $small_text;
+                        font-weight: 100;
+                        &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
 
@@ -152,7 +155,7 @@ ul {
     @include placeholder;
 }
 
-.arrow-bg {
+.arrow-scroll {
     width: 35px;
     height: 35px;
     background-color: $text_colored_bg;
